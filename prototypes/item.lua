@@ -10,6 +10,6 @@ cookedFish.icons= {
 local baitCapsule = table.deepcopy(data.raw.capsule["poison-capsule"])
 baitCapsule.name = "bait-capsule"
 baitCapsule.capsule_action.attack_parameters.ammo_type.action[1].action_delivery.projectile = "bait-capsule"
-baitCapsule.icon = "__BiterPets__/graphics/entity/bait-capsule/bait-capsule.png"
+baitCapsule.icon = "__AlienPets__/graphics/entity/bait-capsule/bait-capsule.png"
 baitCapsule.icon_size = 32
 data:extend{baitCapsule,cookedFish}
