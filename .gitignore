@@ -1,5 +1,9 @@
 /.buildpath
 /.project
 /.settings/
+<<<<<<< HEAD
+/locale/*/*.cfg
+=======
 /locale/
+>>>>>>> branch 'main' of https://github.com/wzurborg/AlienPets.git
 !/locale/*/config.cfg
