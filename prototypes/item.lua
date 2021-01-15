@@ -14,28 +14,70 @@ baitCapsule.capsule_action.attack_parameters.ammo_type.action[1].action_delivery
 baitCapsule.icon = "__AlienPets__/graphics/item/bait-capsule/bait-capsule.png"
 baitCapsule.icon_size = 32
 
-local tamedBehemothWorm = table.deepcopy(data.raw.capsule["raw-fish"])
-tamedBehemothWorm.name = "tamed-behemoth-worm"
-tamedBehemothWorm.icon = "__AlienPets__/graphics/item/tamed-behemoth-worm/tamed-behemoth-worm.png"
+local tamedBehemothWorm = { 
+    name = "tamed-behemoth-worm",
+    icon = "__AlienPets__/graphics/item/tamed-behemoth-worm/tamed-behemoth-worm.png",
+    icon_mipmaps = 4,
+    icon_size = 64,
+    place_result = "tamed-behemoth-worm",
+    stack_size = 10,
+    subgroup = "worms",
+    type = "item"
+}
 
-local tamedBigWorm = table.deepcopy(data.raw.capsule["raw-fish"])
-tamedBigWorm.name = "tamed-big-worm"
-tamedBigWorm.icon = "__AlienPets__/graphics/item/tamed-big-worm/tamed-big-worm.png"
+local tamedBigWorm = { 
+    name = "tamed-big-worm",
+    icon = "__AlienPets__/graphics/item/tamed-big-worm/tamed-big-worm.png",
+    icon_mipmaps = 4,
+    icon_size = 64,
+    place_result = "tamed-big-worm",
+    stack_size = 10,
+    subgroup = "worms",
+    type = "item"
+}
 
-local tamedMediumWorm = table.deepcopy(data.raw.capsule["raw-fish"])
-tamedMediumWorm.name = "tamed-medium-worm"
-tamedMediumWorm.icon = "__AlienPets__/graphics/item/tamed-medium-worm/tamed-medium-worm.png"
+local tamedMediumWorm = { 
+    name = "tamed-medium-worm",
+    icon = "__AlienPets__/graphics/item/tamed-medium-worm/tamed-medium-worm.png",
+    icon_mipmaps = 4,
+    icon_size = 64,
+    place_result = "tamed-medium-worm",
+    stack_size = 10,
+    subgroup = "worms",
+    type = "item"
+}
 
-local tamedSmallWorm = table.deepcopy(data.raw.capsule["raw-fish"])
-tamedSmallWorm.name = "tamed-small-worm"
-tamedSmallWorm.icon = "__AlienPets__/graphics/item/tamed-small-worm/tamed-small-worm.png"
+local tamedSmallWorm = { 
+    name = "tamed-small-worm",
+    icon = "__AlienPets__/graphics/item/tamed-small-worm/tamed-small-worm.png",
+    icon_mipmaps = 4,
+    icon_size = 64,
+    place_result = "tamed-small-worm",
+    stack_size = 10,
+    subgroup = "worms",
+    type = "item"
+}
 
-local petBiterSpawner = table.deepcopy(data.raw.capsule["raw-fish"])
-petBiterSpawner.name = "pet-biter-spawner"
-petBiterSpawner.icon = "__AlienPets__/graphics/item/pet-biter-spawner/pet-biter-spawner.png"
+local petBiterSpawner = { 
+    name = "pet-biter-spawner",
+    icon = "__AlienPets__/graphics/item/pet-biter-spawner/pet-biter-spawner.png",
+    icon_mipmaps = 4,
+    icon_size = 64,
+    place_result = "pet-biter-spawner",
+    stack_size = 10,
+    subgroup = "nests",
+    type = "item"
+}
 
-local petSpitterSpawner = table.deepcopy(data.raw.capsule["raw-fish"])
-petSpitterSpawner.name = "pet-spitter-spawner"
-petSpitterSpawner.icon = "__AlienPets__/graphics/item/pet-spitter-spawner/pet-spitter-spawner.png"
+local petSpitterSpawner = { 
+    name = "pet-spitter-spawner",
+    icon = "__AlienPets__/graphics/item/pet-spitter-spawner/pet-spitter-spawner.png",
+    icon_mipmaps = 4,
+    icon_size = 64,
+    place_result = "pet-spitter-spawner",
+    stack_size = 10,
+    subgroup = "nests",
+    type = "item"
+}
 
 data:extend{cookedFish, baitCapsule, tamedBehemothWorm, tamedBigWorm, tamedMediumWorm, tamedSmallWorm, petBiterSpawner, petSpitterSpawner}
