@@ -65,9 +65,9 @@ local tamedBehemothWormRecipe = {
 
 local biterSpawnerRecipe = {
     type = "recipe",
-    name = "pet-biter-spawner",
+    name = "tamed-biter-spawner",
     ingredients = {{"cooked-fish", 10}, {"iron-gear-wheel", 5}, {"electronic-circuit", 5}},
-    result = "pet-biter-spawner",
+    result = "tamed-biter-spawner",
     energy_required = 4,
     group = "Aliens",
     subgroup = "nests",
@@ -75,9 +75,9 @@ local biterSpawnerRecipe = {
 
 local spitterSpawnerRecipe = {
     type = "recipe",
-    name = "pet-spitter-spawner",
+    name = "tamed-spitter-spawner",
     ingredients = {{"cooked-fish", 10}, {"iron-gear-wheel", 5}, {"electronic-circuit", 5}},
-    result = "pet-spitter-spawner",
+    result = "tamed-spitter-spawner",
     energy_required = 4,
     group = "Aliens",
     subgroup = "nests",

@@ -1,12 +1,7 @@
 local cookedFish = table.deepcopy(data.raw.capsule["raw-fish"])
 cookedFish.capsule_action.attack_parameters.ammo_type.action.action_delivery.target_effects[1].damage.amount = (-200)
 cookedFish.name = "cooked-fish"
-cookedFish.icons= {
-   {
-      icon=cookedFish.icon,
-      tint={r=1,g=0.4,b=0.7,a=1},
-   },
-}
+cookedFish.icon = "__AlienPets__/graphics/item/cooked-fish/cooked-fish.png"
 
 local baitCapsule = table.deepcopy(data.raw.capsule["poison-capsule"])
 baitCapsule.name = "bait-capsule"
@@ -16,7 +11,7 @@ baitCapsule.icon_size = 32
 
 local tamedBehemothWorm = { 
     name = "tamed-behemoth-worm",
-    icon = "__AlienPets__/graphics/item/tamed-behemoth-worm/tamed-behemoth-worm.png",
+    icon = "__base__/graphics/icons/behemoth-worm.png",
     icon_mipmaps = 4,
     icon_size = 64,
     place_result = "tamed-behemoth-worm",
@@ -27,7 +22,7 @@ local tamedBehemothWorm = {
 
 local tamedBigWorm = { 
     name = "tamed-big-worm",
-    icon = "__AlienPets__/graphics/item/tamed-big-worm/tamed-big-worm.png",
+    icon = "__base__/graphics/icons/big-worm.png",
     icon_mipmaps = 4,
     icon_size = 64,
     place_result = "tamed-big-worm",
@@ -38,7 +33,7 @@ local tamedBigWorm = {
 
 local tamedMediumWorm = { 
     name = "tamed-medium-worm",
-    icon = "__AlienPets__/graphics/item/tamed-medium-worm/tamed-medium-worm.png",
+    icon = "__base__/graphics/icons/medium-worm.png",
     icon_mipmaps = 4,
     icon_size = 64,
     place_result = "tamed-medium-worm",
@@ -49,7 +44,7 @@ local tamedMediumWorm = {
 
 local tamedSmallWorm = { 
     name = "tamed-small-worm",
-    icon = "__AlienPets__/graphics/item/tamed-small-worm/tamed-small-worm.png",
+    icon = "__base__/graphics/icons/small-worm.png",
     icon_mipmaps = 4,
     icon_size = 64,
     place_result = "tamed-small-worm",
@@ -58,26 +53,26 @@ local tamedSmallWorm = {
     type = "item"
 }
 
-local petBiterSpawner = { 
-    name = "pet-biter-spawner",
-    icon = "__AlienPets__/graphics/item/pet-biter-spawner/pet-biter-spawner.png",
+local tamedBiterSpawner = { 
+    name = "tamed-biter-spawner",
+    icon = "__base__/graphics/icons/biter-spawner.png",
     icon_mipmaps = 4,
     icon_size = 64,
-    place_result = "pet-biter-spawner",
+    place_result = "tamed-biter-spawner",
     stack_size = 10,
     subgroup = "nests",
     type = "item"
 }
 
-local petSpitterSpawner = { 
-    name = "pet-spitter-spawner",
-    icon = "__AlienPets__/graphics/item/pet-spitter-spawner/pet-spitter-spawner.png",
+local tamedSpitterSpawner = { 
+    name = "tamed-spitter-spawner",
+    icon = "__base__/graphics/icons/spitter-spawner.png",
     icon_mipmaps = 4,
     icon_size = 64,
-    place_result = "pet-spitter-spawner",
+    place_result = "tamed-spitter-spawner",
     stack_size = 10,
     subgroup = "nests",
     type = "item"
 }
 
-data:extend{cookedFish, baitCapsule, tamedBehemothWorm, tamedBigWorm, tamedMediumWorm, tamedSmallWorm, petBiterSpawner, petSpitterSpawner}
+data:extend{cookedFish, baitCapsule, tamedBehemothWorm, tamedBigWorm, tamedMediumWorm, tamedSmallWorm, tamedBiterSpawner, tamedSpitterSpawner}
