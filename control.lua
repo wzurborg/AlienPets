@@ -9,9 +9,3 @@ script.on_event({defines.events.on_entity_damaged},
 		end
    end
 )
-
-script.on_event(defines.events.on_built_entity, 
-  function (e)
-    e.created_entity.prototype.flags["not-deconstructable"] = false
-  end
-)  
